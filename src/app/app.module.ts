@@ -11,6 +11,13 @@ import { HomeComponent } from './home/home.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { ServiceComponent } from './service/service.component';
 import { SupportComponent } from './support/support.component';
+import { CourselComponentComponent } from './coursel-component/coursel-component.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ReusableButtonComponent } from './reusable-button/reusable-button.component';
+import { ReusableFooterComponent } from './reusable-footer/reusable-footer.component';
+import { ReusableTestimonialsComponent } from './reusable-testimonials/reusable-testimonials.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +30,15 @@ import { SupportComponent } from './support/support.component';
     NavigationBarComponent,
     ServiceComponent,
     SupportComponent,
-    ...myRoutings
+    ...myRoutings,
+    CourselComponentComponent,
+    ProgressBarComponent,
+    ReusableButtonComponent,
+    ReusableFooterComponent,
+    ReusableTestimonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, CarouselModule, ProgressBarModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

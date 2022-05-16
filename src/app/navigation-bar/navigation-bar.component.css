@@ -1,32 +1,36 @@
-.bg-img{
-    position: absolute;
-    top: 0;
-    z-index:-1;
+.header-nav-main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .header .nav-section {
   background-color: transparent !important;
   width: 100%;
 }
-.nav-button-common{
-    margin: 0px 0px 0px 5px;
+.nav-button-common {
+  margin: 0px 0px 0px 35px;
 }
 
-
-.nav-item .nav-link{
-    color:white;
-    font-weight: 500;
-    margin: 0px 10px 0px 0px;
+.nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+  margin: 0px 15px 0px 0px;
 }
 
 .nav-link:hover {
   color: #13b0cc !important;
 }
 
-.active{
-color: #198ca0!important;
-}
-.navbar-brand{
-    margin: 22px 0px 0px 42px;
+.active {
+  color: #198ca0 !important;
 }
 
+.about-header {
+  background-color: white;
+}
+
+.about-header li a {
+  color: black;
+}

@@ -1,0 +1,25 @@
+<div class="app-maxiwdth">
+    <p-carousel [value]="products" styleClass="custom-carousel" [autoplayInterval]="3000" [numVisible]="3"
+        [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+        <ng-template pTemplate="header">
+        </ng-template>
+        <ng-template let-product pTemplate="item">
+            <div class="product-item">
+                <div class="product-item-content">
+
+                    <div class="">
+                        <div class="">
+                            <img class="w-100" src='{{product.image}}'>
+                        </div>
+                        <div class="container-section-4-combhpb">
+                            <h2>{{product.name}}</h2>
+                            <p>Lorum Ipsum is simply free text available amet,consectetur adipiscing elit.</p>
+                            <app-reusable-button [type]="'button'" label="DONATE US" [cssClass]="'btn-commom-class'">
+                            </app-reusable-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
